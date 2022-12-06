@@ -3,7 +3,7 @@ const axios = require("axios")
 
 const { verifyJwtToken } = require("../utils/verifyJWT")
 
-const ssoIdentityVerifyToken = "https://sso-service.onrender.com/cas/verifysso"
+const ssoIdentityVerifyToken = "https://identity-provider.onrender.com/cas/verifysso"
 
 const ssoRedirect = () => {
     return async(req, res, next) => {
